@@ -1,0 +1,18 @@
+*** Settings ***
+Suite Setup
+Suite Teardown    Close Browser
+Resource          ../Resource/global.txt
+Resource          Resource/01 resource.txt
+
+*** Test Cases ***
+01 Test case
+    [Tags]    TC.01.01.01
+    Global test keyword
+    Test keyword
+
+02 Test url
+    [Tags]    TC.01.01.01
+    Comment    ${URL_ADDRESS}=    Set Variable    https://www.google.sk
+    ${BROWSER}=    Set Variable    ff
+    Comment    ${remote_driver_url}=    Set Variable    http://127.0.0.1:14444/wd/hub
+    Open Browser To    ${URL_ADDRESS}    ${BROWSER}

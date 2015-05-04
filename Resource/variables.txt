@@ -1,0 +1,2 @@
+*** Variables ***
+${GLOBAL-KEYWORD-TEXT}    This is Global test keyword

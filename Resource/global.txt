@@ -1,0 +1,12 @@
+*** Settings ***
+Resource          gui.txt
+Resource          variables.txt
+Library           Selenium2Library
+Library           Collections
+Library           String
+
+*** Variables ***
+
+*** Keywords ***
+Global test keyword
+    Log    ${GLOBAL-KEYWORD-TEXT}
