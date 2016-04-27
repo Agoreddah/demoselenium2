@@ -1,0 +1,6 @@
+*** Variables ***
+${TEST-KEYWORD-TEXT}    This is 01 Test keyword
+
+*** Keywords ***
+Test keyword
+    Log    ${TEST-KEYWORD-TEXT}
